@@ -104,6 +104,8 @@ body, html {
 
 img {
     width: 100%;
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
 }
 
 h1 {
@@ -113,43 +115,46 @@ h1 {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     text-align: right;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 1.25em;
+    font-size: 2.5em;
 }
 
 h1 em {
-    color: #00000;
-    padding: 1% 0;
-    background-color: #f6e954;
+    color: #aae0e0;
+    padding: 0.3% 0;
+    background-color: #223446;
     font-style: normal;
 }
 
 
 h1 b {
-    background-color: #aae0e0;
-    color: #223446;
+    
+    color: white;
     padding: 1% 0 1% 1%;
     font-weight: 800;
 }
 
 h1 i {
-    background-color: #aae0e0;
-    color: #223446;
+    
+    color: white;
     padding: 1% 1% 1% 0;
     font-style: italic;    
 }
 
 
 p {
-    font-family: termina, sans-serif;
-    font-weight: 600;
-    font-style: normal;    
+    font-family: halogen,sans-serif;
+    font-weight: 900;
+    font-style: normal;
     text-align: left;
     line-height: 2;
     background-color: #223446;
     color: white;
     padding: 1%;
     width: 60%;
-    
+    color: #ddcbb9;
+   
 }
 
 aside {
@@ -267,13 +272,13 @@ a:hover {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 600px) {
     body {
         font-size: 80%;
     }
 }
 
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 490px) {
     body {
         font-size: 60%;
     }
