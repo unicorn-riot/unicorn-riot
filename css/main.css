@@ -89,24 +89,58 @@ textarea {
 
 
 body {
+    background-color: #554434;;
+    
+}
+
+article {
     background-color: #ddcbb9;
-}
-
-body, html {
-  height: 100%;
-  display: grid;
-}
-#contents { /* thing to center */
-  margin: auto;
-    text-align: center;
-    padding: 1em;
-}
-
-img {
-    width: 100%;
-    border-top: 20px solid white;
     border-bottom: 20px solid white;
+    box-shadow: 0 30px 100px rgba( 0, 0, 0, 0.7 );
 }
+
+#nw {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 13vw;
+}
+
+#bbl {
+    position: absolute;
+    left:25%;
+    top: 0;
+    height: 13vw;
+}
+
+#ne {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 13vw;
+}
+
+#riot {
+    width: 100%;
+    margin-top: 13vw;
+    border-top: 13px solid white;
+    border-bottom: 13px solid white;
+}
+
+#wabbit {
+    width: 20vw;
+    margin-top: -80px;
+    margin-left: 5vw;
+}
+
+#se {
+    position: absolute;
+    right: 1.5vw;
+    bottom: -1em;
+    width: 13vw;
+}
+
+
 
 h1 {
     font-family: input-mono, monospace;
@@ -115,9 +149,9 @@ h1 {
     letter-spacing: -0.05em;
     text-transform: uppercase;
     text-align: right;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 1.25em;
-    font-size: 2.5em;
+    font-size: 4vw;
 }
 
 h1 em {
@@ -143,45 +177,77 @@ h1 i {
 }
 
 
-p {
+blockquote {
     font-family: halogen,sans-serif;
     font-weight: 900;
+    font-size: 2.75vw;
     font-style: normal;
     text-align: left;
-    line-height: 2;
+    line-height: 1.25;
     background-color: #223446;
     color: white;
     padding: 1%;
-    width: 60%;
+    width: 56vw;
+    margin-left: 10vw;
     color: #ddcbb9;
    
 }
 
 aside {
-    margin-top: 5em;
+    margin-top: 10em;
+    position: relative;
 }
 
 aside p {
-    background: none;
     color: black;
-        font-family: input-mono, monospace;
+    font-family: input-mono, monospace;
     font-weight: 300;
     font-style: normal;    
-    width: 100%;
-
+    text-align: right;
+    font-size: 1.75vw;
+    margin-right: 17vw;
+    padding-bottom: 2em;
 }
 
 a {
-    color: black;
+    color: #222;
     background-color: black;
     padding: 1%;
     text-decoration: none;    
 }
 
 a:hover {
-    color: #aaa;
- 
+    color: #888;
+    animation:blinkingText 0.1s 3;
 }
+    
+@keyframes blinkingText{
+    0%{     color: #444;    }
+    49%{    color: #444; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #444;    }
+}
+
+ 
+footer {
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    width: 100%;
+    opacity: 0.05;
+}
+
+footer #fade {
+    position: absolute;
+    bottom: -70vw;
+    height: 30vw;
+    background: linear-gradient(0deg, rgba(85,68,52,1), rgba(85,68,52,0));
+    width: 100%;
+}
+
 
 
 /* ==========================================================================
@@ -271,19 +337,6 @@ a:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 80%;
-    }
-}
-
-@media only screen and (max-width: 490px) {
-    body {
-        font-size: 60%;
-    }
-}
-
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
